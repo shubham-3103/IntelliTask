@@ -30,7 +30,7 @@ const TaskList = () => {
     if (emailId) {
       const fetchTasks = async () => {
         try {
-          const response = await fetch('http://localhost:5000/alltask');
+          const response = await fetch('https://intellitask-4q44.onrender.com/alltask');
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
@@ -72,7 +72,7 @@ const TaskList = () => {
 
   const handleDelete = async (taskId) => {
     try {
-      const response = await fetch(`http://localhost:5000/deletetask/${taskId}`, {
+      const response = await fetch(`https://intellitask-4q44.onrender.com/deletetask/${taskId}`, {
         method: 'DELETE'
       });
       if (!response.ok) {
@@ -86,7 +86,7 @@ const TaskList = () => {
 
   const handleCollaborate = async (taskId) => {
     try {
-      const response = await fetch(`http://localhost:5000/requestcollaboration/${taskId}`, {
+      const response = await fetch(`https://intellitask-4q44.onrender.com/requestcollaboration/${taskId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ const TaskList = () => {
 
   const handleUpdate = async (taskId, updatedTask) => {
     try {
-      const response = await fetch(`http://localhost:5000/updatetask/${taskId}`, {
+      const response = await fetch(`https://intellitask-4q44.onrender.com/updatetask/${taskId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -130,7 +130,7 @@ const TaskList = () => {
 
   const handleAcceptRequest = async (taskId, email) => {
     try {
-      const response = await fetch(`http://localhost:5000/acceptcollaboration/${taskId}`, {
+      const response = await fetch(`https://intellitask-4q44.onrender.com/acceptcollaboration/${taskId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -149,7 +149,7 @@ const TaskList = () => {
 
   const handleRejectRequest = async (taskId, email) => {
     try {
-      const response = await fetch(`http://localhost:5000/rejectcollaboration/${taskId}`, {
+      const response = await fetch(`https://intellitask-4q44.onrender.com/rejectcollaboration/${taskId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

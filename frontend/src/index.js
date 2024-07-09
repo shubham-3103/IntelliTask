@@ -27,7 +27,7 @@ const ClerkWithRoutes = () =>{
       navigate={(to) => navigate(to)}
     >
     <Routes>
-          <Route path='/' element={<TaskList />} />
+          <Route path='/' element={<CreateTask />} />
           <Route path='/createtask' element={<CreateTask />} />
           <Route path='/alltask' element={<TaskList />} />
           <Route 
