@@ -1,0 +1,26 @@
+// SearchResult.jsx
+
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
+function SearchResult() {
+  const location = useLocation();
+  const [searchQuery, setSearchQuery] = useState('');
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const query = params.get('q');
+    setSearchQuery(query || ''); // Set the search query state
+    // Perform any fetching or processing based on the search query
+  }, [location.search]);
+
+  return (
+    <div>
+      <h2>Search Results for "{searchQuery}"</h2>
+      {/* Implement your search result rendering here */}
+      seacrch query
+    </div>
+  );
+}
+
+export default SearchResult;

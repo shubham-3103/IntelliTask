@@ -1,0 +1,32 @@
+.btn-custom {
+    color: #0f445e;
+    border-color: #0f445e;
+    background-color: white;
+    /* padding: 10px 20px; */
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100px;
+    margin: 8px;
+  }
+  
+  .btn-custom:hover {
+    color: white;
+    background-color: rgb(71, 150, 202);
+    border-color: #224c77;
+  }
+.nav-item{
+    margin: 8px;
+}
+.navbar, .navbar a{
+    background-color: #224c77;
+    color: white;
+}
+.navbar, .navbar a:hover{
+    color: rgb(99, 183, 239);
+}
+.nav-item-signin{
+    margin: 5px;
+    color: white;
+}
+
+  
